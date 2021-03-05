@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkblue;
+    padding: 0.5rem 0;
+}
+
+.logo {
+    width: 3rem;
+    height: 2rem;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+}
