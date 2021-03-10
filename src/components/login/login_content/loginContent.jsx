@@ -7,7 +7,7 @@ const LoginContent = ({ handleGoogleLogin, handleGithubLogin }) => {
     return (
         <div className={styles.body}>
             <LoginHeader />
-            <div className={styles.content}>
+            <div className={styles.contents}>
                 <span className={styles.title}>Login</span>
                 <button
                     className={styles.googleLogin}

@@ -1,10 +1,14 @@
-import "./app.css";
 import Router from "./route";
 import AuthService from "./service/auth_service";
+import styles from "./app.module.css";
 
 function App() {
     const authService = new AuthService();
-    return <Router authService={authService} />;
+    return (
+        <div className={styles.container}>
+            <Router authService={authService} />
+        </div>
+    );
 }
 
 export default App;
