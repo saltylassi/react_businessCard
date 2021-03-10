@@ -1,29 +1,17 @@
 import React from "react";
-import LoginFooter from "../../components/login/login_footer/loginFooter";
-import LoginHeader from "../../components/login/login_header/loginHeader";
+import LoginContent from "../../components/login/login_content/loginContent";
 import styles from "./loginPresenter.module.css";
-const LoginPresenter = ({ handleGoogleLogin, handleGithubLogin }) => {
+const LoginPresenter = ({
+    handleGoogleLogin,
+    handleGithubLogin,
+    handleLogout,
+}) => {
     return (
         <div className={styles.container}>
-            <div className={styles.body}>
-                <LoginHeader />
-                <div className={styles.content}>
-                    <span className={styles.title}>Login</span>
-                    <button
-                        className={styles.googleLogin}
-                        onClick={handleGoogleLogin}
-                    >
-                        <span className={styles.btnText}>Google</span>
-                    </button>
-                    <button
-                        className={styles.githubLogin}
-                        onClick={handleGithubLogin}
-                    >
-                        <span className={styles.btnText}>Github</span>
-                    </button>
-                </div>
-                <LoginFooter />
-            </div>
+            <LoginContent
+                handleGoogleLogin={handleGoogleLogin}
+                handleGithubLogin={handleGithubLogin}
+            />
         </div>
     );
 };

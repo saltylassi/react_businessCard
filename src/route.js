@@ -6,14 +6,19 @@ import {
     Switch,
 } from "react-router-dom";
 import routes from "./routes";
-import Login from "./route/login/index";
+import Login from "./route/login";
+import Main from "./route/main";
 
-export default () => (
+export default ({ authService }) => (
     <Router>
         <>
             <Switch>
-                <Route path={routes.login} exact component={Login} />
-                <Redirect path="*" to={routes.login} />
+                <Route path={routes.login} exact>
+                    <Login authService={authService} />
+                </Route>
+                <Route path={routes.main} exact>
+                    <Main authService={authService} />
+                </Route>
             </Switch>
         </>
     </Router>

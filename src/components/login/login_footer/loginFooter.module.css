@@ -1,10 +1,11 @@
 @value makerLightGrey from "../../../common/colors.css";
+@value makerGreen from '../../../common/colors.css';
 
 .container {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: darkblue;
+    background-color: makerGreen;
     padding: 0.5rem 0;
 }
 

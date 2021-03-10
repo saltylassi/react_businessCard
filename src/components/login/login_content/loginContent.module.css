@@ -1,0 +1,39 @@
+.body {
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.googleLogin,
+.githubLogin {
+    outline: none;
+    background-color: white;
+    border: 2px solid darkblue;
+    width: 90%;
+    border-radius: 1rem;
+    padding: 0.8rem 0;
+    margin: 0.3rem 0;
+    cursor: pointer;
+}
+
+.btnText {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
